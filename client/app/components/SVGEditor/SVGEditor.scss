@@ -1,0 +1,95 @@
+.app-container {
+
+  .title {
+    margin: 10px 0 10px 0;
+  }
+  .column {
+    float: left;
+    &.left-menu {
+      position: absolute;
+      top: 100px;
+      left: 0;
+      z-index:100;
+      min-height: 500px;
+      width: 200px;
+      background: #58b5dc;
+      h2 {
+        padding: 5px;
+        text-align: center;
+        color: white;
+        font-weight: normal;
+        margin: 20px 5px 20px 5px;
+        border-bottom: 1px solid white;
+      }
+
+      .list {
+        position: relative;
+        min-height: 100px;
+        .box {
+          position: absolute;
+          left: 23px;
+          top: 50px;
+          width: 152px;
+          height: 50px;
+          z-index: 200;
+          .handle {
+            background: black;
+            float: left;
+            width: 10px;
+            height: 10px;
+            margin-top: 20px;
+          }
+          &.input {
+            .rectangle {
+              background: #f46b29;
+              opacity: 1;
+              width: 130px;
+              height: 50px;
+              float: left;
+              border: 1px solid black;
+            }
+          }
+          &.output {
+            .rectangle {
+              background: #f8971d;
+              opacity: 1;
+              width: 130px;
+              height: 50px;
+              float: left;
+              border: 1px solid black;
+            }
+          }
+          &:hover {
+            .rectangle {
+              cursor: move;
+            }
+          }
+          &.moving {
+            .rectangle {
+              box-shadow: 15px 15px 10px 10px rgba(44, 44, 44, 0.5);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .editor {
+    width: 100%;
+    margin-left: 200px;
+    min-height: 500px;
+    background: white;
+    .viewport {
+      width: 100%;
+      min-height: 494px;
+    }
+
+    .curve {
+      stroke:black;
+      stroke-width: 2;
+      fill: none;
+    }
+
+  }
+
+}

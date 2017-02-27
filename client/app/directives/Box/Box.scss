@@ -1,0 +1,26 @@
+.rectangle {
+  stroke:black;
+  stroke-width:2;
+  opacity:0.8;
+  cursor: pointer;
+}
+
+.handle {
+  cursor: pointer;
+}
+
+.handle:hover {
+  fill: orange;
+}
+
+.input {
+  .rectangle {
+    fill: #f46b29;
+  }
+}
+
+.output {
+  .rectangle {
+    fill: #f8971d;
+  }
+}

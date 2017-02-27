@@ -1,0 +1,40 @@
+<div class="app-container">
+
+    <div class="column left-menu">
+
+        <div class="list">
+
+            <h2>Input</h2>
+
+            <div class="box input new" draggable on-drop="$ctrl.addNewBox(x,y,type)">
+                <div class="handle left"></div>
+                <div class="rectangle"></div>
+                <div class="handle right"></div>
+            </div>
+
+        </div>
+
+
+        <div class="list">
+
+            <h2>Output</h2>
+
+            <div class="box output new" draggable on-drop="$ctrl.addNewBox(x,y,type)">
+                <div class="handle left"></div>
+                <div class="rectangle"></div>
+                <div class="handle right"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="column editor">
+        <svg class="viewport">
+
+        </svg>
+    </div>
+
+    <div class="clear"></div>
+
+</div>
